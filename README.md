@@ -10,11 +10,12 @@ This repository presents the procedure and application for acquiring an electroc
 - The sketch prints both ADC values and timestamps, allowing verification of sampling frequency and period.
 
 ### 2. Data Logging
-- The `Digital_Signal_Processing.ipynb` notebook reads serial data and writes it to a `.csv` file.
+- The `serial_monitor.ipynb` notebook reads serial data and writes it to a `data_ecg_2.csv` file.
 - This step captures the raw signal for offline analysis.
 
 ### 3. Digital Signal Processing
-- The raw ECG signal is noisy and distorted, requiring several DSP techniques for meaningful interpretation.
+-The raw ECG signal is noisy and distorted, requiring several DSP techniques for meaningful interpretation.
+-These techniques are implemented in the Digital_Signal_Processing.ipynb notebook, where the data is both understood and processed to enhance signal quality and prepare it for feature extraction.
 - Processing steps include:
   - Removal of DC component (mean).
   - Notch filter to eliminate power line interference.
@@ -39,7 +40,8 @@ This repository presents the procedure and application for acquiring an electroc
 ## Repository Contents
 
 - `read_ecg.ino`: Arduino sketch for ECG signal acquisition via ADC and serial monitor.
-- `Digital_Signal_Processing.ipynb`: Reads serial data and saves it to `.csv`.
+- `serial_monitor.ipynb`: Reads serial data and saves it to `.csv`.
+- The 'Digital_Signal_Processing.ipynb' notebook performs digital signal processing (DSP) directly on the acquired ECG signal.
 - `feature_extraction.ipynb`: Applies DSP techniques and extracts features.
 - `raw_data.csv`: Raw or filtered ECG data.
 - `features.csv`: Table of extracted features.
