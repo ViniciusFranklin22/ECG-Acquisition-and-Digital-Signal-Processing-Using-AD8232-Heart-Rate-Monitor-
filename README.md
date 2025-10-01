@@ -54,8 +54,7 @@ To illustrate the effectiveness of the digital signal processing techniques appl
   <em>Filtered ECG Signal</em>
 </p>
 
-
-## Observation
+### Observation
 
 We observe a significant improvement in signal quality. The filtered signal closely resembles the expected ECG waveform, with clear visibility of the QRS complex. In some segments, the T wave appears slightly more prominent than desired, which could be refined through further testing or by targeting specific frequency components. Nonetheless, the result is already very good and suitable for general use.
 
