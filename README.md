@@ -42,15 +42,13 @@ This repository presents the procedure and application for acquiring an electroc
 
 To illustrate the effectiveness of the digital signal processing techniques applied, this project includes visual comparisons between the raw ECG signal and the filtered version. These plots help demonstrate how noise and unwanted components are removed, improving signal clarity and preserving key features such as peaks and rhythm.
 
-![alt text](https://github.com/ViniciusFranklin22/ECG-Acquisition-and-Digital-Signal-Processing-Using-AD8232-Heart-Rate-Monitor-/blob/main/filtered.png?raw=true)
+![alt text](https://github.com/ViniciusFranklin22/ECG-Acquisition-and-Digital-Signal-Processing-Using-AD8232-Heart-Rate-Monitor-/blob/main/raw.png?raw=true)
 Raw ECG Signal
 
 
-<p align="center">
-  filtered.png
-  <br>
-  <em>Filtered ECG Signal</em>
-</p>
+![alt text](https://github.com/ViniciusFranklin22/ECG-Acquisition-and-Digital-Signal-Processing-Using-AD8232-Heart-Rate-Monitor-/blob/main/filtered.png?raw=true)
+Filtered ECG Signal
+
 
 ### Observation
 
