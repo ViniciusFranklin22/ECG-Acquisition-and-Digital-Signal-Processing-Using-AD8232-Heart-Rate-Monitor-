@@ -37,6 +37,32 @@ This repository presents the procedure and application for acquiring an electroc
   - Fundamental frequency
 
 
+
+## Signal Comparison (Raw vs. Filtered)
+
+To illustrate the effectiveness of the digital signal processing techniques applied, this project includes visual comparisons between the raw ECG signal and the filtered version. These plots help demonstrate how noise and unwanted components are removed, improving signal clarity and preserving key features such as peaks and rhythm.
+
+<p align="center">
+  raw.png
+  <br>
+  <em>Raw ECG Signal</em>
+</p>
+
+<p align="center">
+  filtered.png
+  <br>
+  <em>Filtered ECG Signal</em>
+</p>
+
+
+## Observation
+
+We observe a significant improvement in signal quality. The filtered signal closely resembles the expected ECG waveform, with clear visibility of the QRS complex. In some segments, the T wave appears slightly more prominent than desired, which could be refined through further testing or by targeting specific frequency components. Nonetheless, the result is already very good and suitable for general use.
+
+Heart rate can be obtained either from the fundamental frequency or by measuring the distance between peaks. Since the time-domain shape of the signal is crucial, additional tuning of parameters such as filter order and cutoff frequency could enhance the waveform even further — but the current outcome is already quite satisfactory for this application.
+
+> The comparison is available in the `Digital_Signal_Processing.ipynb` notebook, where both signals are plotted side by side for visual inspection.
+
 ## Repository Contents
 
 - `read_ecg.ino`: Arduino sketch for ECG signal acquisition via ADC and serial monitor.
