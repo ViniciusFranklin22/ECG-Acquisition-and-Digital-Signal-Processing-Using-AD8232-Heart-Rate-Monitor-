@@ -14,8 +14,8 @@ This repository presents the procedure and application for acquiring an electroc
 - This step captures the raw signal for offline analysis.
 
 ### 3. Digital Signal Processing
--The raw ECG signal is noisy and distorted, requiring several DSP techniques for meaningful interpretation.
--These techniques are implemented in the Digital_Signal_Processing.ipynb notebook, where the data is both understood and processed to enhance signal quality and prepare it for feature extraction.
+- The raw ECG signal is noisy and distorted, requiring several DSP techniques for meaningful interpretation.
+- These techniques are implemented in the Digital_Signal_Processing.ipynb notebook, where the data is both understood and processed to enhance signal quality and prepare it for feature extraction.
 - Processing steps include:
   - Removal of DC component (mean).
   - Notch filter to eliminate power line interference.
