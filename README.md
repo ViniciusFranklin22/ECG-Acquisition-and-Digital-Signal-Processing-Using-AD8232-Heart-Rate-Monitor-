@@ -5,7 +5,7 @@ This repository presents the procedure and application for acquiring an electroc
 ## Project Structure
 
 ### 1. Signal Acquisition with Arduino
-- The `read_ecg.ino` file contains a simple Arduino sketch that reads ECG signals via ADC and sends them through the serial monitor.
+- The `heart_rate_AD9232.ino` file contains a simple Arduino sketch that reads ECG signals via ADC and sends them through the serial monitor.
 - Sampling frequency is set to **500 Hz**, respecting the Nyquist criterion, since typical ECG signals do not exceed **250 Hz**.
 - The sketch prints both ADC values and timestamps, allowing verification of sampling frequency and period.
 
@@ -60,7 +60,7 @@ Heart rate can be obtained either from the fundamental frequency or by measuring
 
 ## Repository Contents
 
-- `read_ecg.ino`: Arduino sketch for ECG signal acquisition via ADC and serial monitor.
+- `heart_rate_AD9232.ino`: Arduino sketch for ECG signal acquisition via ADC and serial monitor.
 - `serial_monitor.ipynb`: Reads serial data and saves it to `.csv`.
 - The 'Digital_Signal_Processing.ipynb' notebook performs digital signal processing (DSP) directly on the acquired ECG signal.
 - `feature_extraction.ipynb`: Applies DSP techniques and extracts features.
